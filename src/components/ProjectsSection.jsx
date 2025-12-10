@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Twin AI",
     description: "A personalized AI assistant for your everyday work .",
-    image: "@/AI_Twin.jpg",
+    image: "https://drive.google.com/file/d/1YamgJ5Qv-N65qEYDAiCjyfYQJtyBYnjD/view?usp=drive_link",
     tags: ["React", "GenAI", "Node.js"],
     demoUrl: "#",
     githubUrl: "https://github.com/abhyudaya-117/Hacksaagon_25.git",
@@ -15,7 +15,7 @@ const projects = [
     title: "AttendEase",
     description:
       "An RFID based attendance system that simplifies tracking and management.",
-    image: "AttendEase.png",
+    image: "https://drive.google.com/file/d/1QImr1nIyZrqVfsYOfGYOphfBkdIXwvkJ/view?usp=drive_link",
     tags: ["MERN Stack", "ArduinoIDE", "IOT"],
     demoUrl: "#",
     githubUrl: "https://github.com/GarvitKhare07/AttendEase.git",
@@ -25,7 +25,7 @@ const projects = [
     title: "MITS Assistant",
     description:
       "AI Chatbot for MITS college related queries.",
-    image: "Mits_chatbot.png",
+    image: "https://drive.google.com/file/d/12K0zDQlBwTOIfbeL38VHIVi0A7YuOvJy/view?usp=drive_link",
     tags: ["React", "Node.js", "RAG"],
     demoUrl: "#",
     githubUrl: "https://github.com/Ishanjharia/MITSAssistant",
