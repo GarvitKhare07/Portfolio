@@ -25,7 +25,7 @@ const projects = [
     title: "MITS Assistant",
     description:
       "AI Chatbot for MITS college related queries.",
-    image: "https://drive.google.com/file/d/12K0zDQlBwTOIfbeL38VHIVi0A7YuOvJy/view?usp=drive_link",
+    image: "https://drive.google.com/file/d/12K0zDQlBwTOIfbeL38VHIVi0A7YuOvJy/view?usp=sharing",
     tags: ["React", "Node.js", "RAG"],
     demoUrl: "#",
     githubUrl: "https://github.com/Ishanjharia/MITSAssistant",
