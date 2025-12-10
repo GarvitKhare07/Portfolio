@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Twin AI",
     description: "A personalized AI assistant for your everyday work .",
-    image: "AI_Twin.jpg",
+    image: "@/AI_Twin.jpg",
     tags: ["React", "GenAI", "Node.js"],
     demoUrl: "#",
     githubUrl: "https://github.com/abhyudaya-117/Hacksaagon_25.git",
