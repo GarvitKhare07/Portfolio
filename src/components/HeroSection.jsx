@@ -1,4 +1,5 @@
 import { ArrowDown } from "lucide-react";
+import { TypeAnimation } from "react-type-animation";
 
 export const HeroSection = () => {
   return (
@@ -9,25 +10,28 @@ export const HeroSection = () => {
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">
-              {" "}
-              Garvit
-            </span>
-            <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
-              {" "}
-              Khare
-            </span>
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I’m  a Full-Stack Developer and B.Tech student working with the MERN stack. I build clean, scalable web apps and explore how web and IoT come together to create smart experiences.
-          </p>
+  <span>Hi, I'm </span>
 
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+  <span className="text-primary">
+    <TypeAnimation
+      sequence={[
+        "Garvit Khare .",
+        2000,
+      ]}
+      wrapper="span"
+      speed={30}
+      repeat={0}
+      cursor={true}
+    />
+  </span>
+</h1>
+          
+
+          {/* <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
               View My Work
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 

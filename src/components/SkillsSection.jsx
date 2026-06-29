@@ -1,55 +1,149 @@
-// import { useState } from "react";
-// import { cn } from "@/lib/utils";
-// // No categories – all skills shown together
+import {
+  Brain,
+  Monitor,
+  Server,
+  Database,
+  Code2,
+  Wrench,
+  BookOpen,
+  Users,
+} from "lucide-react";
 
-const skills = [
-  { name: "HTML/CSS", level: 95 },
-  { name: "JavaScript", level: 90 },
-  { name: "C++", level: 90 },
-  { name: "Python", level: 85 },
-  { name: "Tailwind CSS", level: 90 },
-  { name: "Node.js", level: 80 },
-  { name: "Express", level: 75 },
-  { name: "MongoDB", level: 70 },
-  { name: "PostgreSQL", level: 65 },
-  { name: "IOT system design", level: 80 },
-  { name: "Git/GitHub", level: 90 },
-  { name: "VS Code", level: 95 },
+const skillCategories = [
+  {
+    title: "Generative AI",
+    icon: Brain,
+    skills: [
+      "LLMs",
+      "RAG",
+      "ChromaDB",
+      "AI Chatbots",
+      "Prompt Engineering",
+      "Context-Aware AI Systems"
+      
+    ],
+  },
+  {
+    title: "Frontend Development",
+    icon: Monitor,
+    skills: [
+      "React.js",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Framer Motion",
+    ],
+  },
+  {
+    title: "Backend Development",
+    icon: Server,
+    skills: [
+      "FastAPI",
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "Authentication",
+      "API Integration",
+    ],
+  },
+  {
+    title: "Programming Languages",
+    icon: Code2,
+    skills: ["Python", "JavaScript", "C++", "Java", "SQL"],
+  },
+  {
+    title: "Database & Storage",
+    icon: Database,
+    skills: [
+      "MongoDB",
+      "PostgreSQL",
+      "MySQL",
+      "ChromaDB",
+      "Database Design",
+    ],
+  },
+  {
+    title: "Core CS",
+    icon: BookOpen,
+    skills: [
+      "Data Structures",
+      "Algorithms",
+      "DBMS",
+      "Operating Systems",
+      
+      "Computer Networks",
+      "OOPs",
+    ],
+  },
+  {
+    title: "Tools & Platforms",
+    icon: Wrench,
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Vercel"
+    ],
+  },
+  
+  {
+    title: "Professional Skills",
+    icon: Users,
+    skills: [
+      "Problem Solving",
+      "Communication",
+      "Team Collaboration",
+      "Leadership",
+      "Project Ownership",
+    ],
+  },
 ];
 
 export const SkillsSection = () => {
   return (
-    <section id="skills" className="py-24 px-4 relative bg-secondary/30">
-      <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary"> Skills</span>
+    <section
+      id="skills"
+      className="py-24 px-4 relative bg-secondary/30"
+    >
+      <div className="container mx-auto max-w-7xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+          My <span className="text-primary">Skills</span>
         </h2>
 
-        {/* All skills directly, no category filter */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skills.map((skill, key) => (
-            <div
-              key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover"
-            >
-              <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg">{skill.name}</h3>
-              </div>
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {skillCategories.map((category) => {
+            const Icon = category.icon;
 
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: `${skill.level}%` }}
-                />
-              </div>
+            return (
+              <div
+                key={category.title}
+                className="gradient-border p-6 rounded-2xl card-hover"
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2 rounded-full bg-primary/10">
+                    <Icon className="h-5 w-5 text-primary" />
+                  </div>
 
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {skill.level}%
-                </span>
+                  <h3 className="font-semibold text-lg">
+                    {category.title}
+                  </h3>
+                </div>
+
+                <div className="flex flex-wrap gap-3">
+                  {category.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-3 py-2 rounded-md border border-border bg-card text-sm text-muted-foreground hover:border-primary hover:text-primary transition-all duration-300"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

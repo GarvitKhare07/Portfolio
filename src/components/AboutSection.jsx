@@ -1,4 +1,12 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Briefcase, Code, User,Brain,
+  Sparkles,
+  Bot,
+  Database,
+  Wrench,
+  Users,
+  Monitor,
+  Server,
+  BookOpen, } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -12,18 +20,17 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & IOT Engineer
+              Generative AI & Full-Stack Developer
             </h3>
 
             <p className="text-muted-foreground">
-              I’m a Full-Stack Developer and B.Tech student with hands-on experience in the MERN stack. 
-              I enjoy building responsive, functional web applications and working across both frontend and backend to create seamless user experiences.
+              I'm a Generative AI and Full-Stack Developer with experience building end-to-end applications powered by Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), FastAPI, React, and modern AI workflows. My work focuses on developing intelligent software that combines scalable backend systems with intuitive user experiences.
 
 
             </p>
 
             <p className="text-muted-foreground">
-              I’m also passionate about IoT and exploring how connected systems, web technologies, and smart devices can be combined to solve real-world problems. I’m always learning, improving, and creating projects that merge innovative ideas with clean development.
+              I enjoy building practical AI solutions—from document intelligence and conversational applications to full-stack web platforms—using modern development frameworks and clean software architecture. I'm continuously expanding my expertise in Generative AI, agentic systems, and scalable application development through hands-on projects.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -33,7 +40,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1pkMcn-uc9dUgrd-BuyT10OpVDLibFb3i/view?usp=sharing"
+                href="https://drive.google.com/file/d/1TNKPTGM2aP4CI229xECRgtHNsyxFOSUL/view?usp=sharing"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
@@ -45,13 +52,12 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
+                  <Brain className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
+                  <h4 className="font-semibold text-lg"> Generative AI</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
+                    Building LLM-powered applications using RAG, AI agents, prompt engineering, and vector databases to solve real-world problems.
                   </p>
                 </div>
               </div>
@@ -59,13 +65,12 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
+                  <Bot className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                  <h4 className="font-semibold text-lg">LLM Applications</h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
+                    Developing intelligent applications powered by LLMs, Retrieval-Augmented Generation (RAG), and AI-driven workflows.
                   </p>
                 </div>
               </div>
@@ -73,13 +78,13 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  <Monitor className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Internet of Things</h4>
+                  <h4 className="font-semibold text-lg">Full-Stack Development</h4>
                   <p className="text-muted-foreground">
-                    IoT systems, embedded connectivity, and smart applications
+                    Developing scalable end-to-end applications with React, FastAPI, Node.js, MongoDB, and modern development practices.
                   </p>
                 </div>
               </div>
