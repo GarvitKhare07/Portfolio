@@ -2,24 +2,23 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    id: 1,
-    title: "Twin AI",
-    description: "A personalized AI assistant for your everyday work .",
-    image: "https://raw.githubusercontent.com/GarvitKhare07/Portfolio/refs/heads/main/AI_Twin.jpg",
-    tags: ["React", "GenAI", "Node.js"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/abhyudaya-117/Hacksaagon_25.git",
-  },
-  {
-    id: 2,
-    title: "AttendEase",
-    description:
-      "An RFID based attendance system that simplifies tracking and management.",
-    image: "https://raw.githubusercontent.com/GarvitKhare07/Portfolio/refs/heads/main/AttendEase.png",
-    tags: ["MERN Stack", "ArduinoIDE", "IOT"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/GarvitKhare07/AttendEase.git",
-  },
+  id: 1,
+  title: "DPI Engine",
+  description: "High-performance Deep Packet Inspection engine for network traffic analysis.",
+  image: "https://raw.githubusercontent.com/GarvitKhare07/Portfolio/refs/heads/main/DPI-Engine.png",
+  tags: ["C++", "Networking", "Multithreading", "DPI", "PCAP"],
+  demoUrl: "#",
+  githubUrl: "https://github.com/GarvitKhare07/DPI-Engine.git",
+},
+{
+  id: 2,
+  title: "AI Smart Classroom",
+  description: "AI learning platform with note chat, MCQ generation, and smart study tools.",
+  image: "https://raw.githubusercontent.com/GarvitKhare07/Portfolio/refs/heads/main/AI-Smart-Class.png",
+  tags: ["React", "FastAPI", "RAG", "LLMs", "ChromaDB"],
+  demoUrl: "#",
+  githubUrl: "https://github.com/GarvitKhare07/AI-Smart-Class.git",
+},
   {
     id: 3,
     title: "MITS Assistant",
@@ -97,7 +96,7 @@ export const ProjectsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
@@ -115,7 +114,7 @@ export const ProjectsSection = () => {
           >
             Check My Linkedin <ArrowRight size={16} />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
