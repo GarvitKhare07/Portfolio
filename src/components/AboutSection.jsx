@@ -24,14 +24,12 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              I'm a Generative AI and Full-Stack Developer with experience building end-to-end applications powered by Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), FastAPI, React, and modern AI workflows. My work focuses on developing intelligent software that combines scalable backend systems with intuitive user experiences.
+              I'm a Generative AI and Full-Stack Developer passionate about building intelligent, end-to-end applications using LLMs, RAG, FastAPI, React, and modern AI workflows. I enjoy turning AI capabilities into practical products—from document intelligence and conversational assistants to scalable full-stack web applications. I'm currently exploring agentic AI systems and advanced LLM application development through hands-on projects.
 
 
             </p>
 
-            <p className="text-muted-foreground">
-              I enjoy building practical AI solutions—from document intelligence and conversational applications to full-stack web platforms—using modern development frameworks and clean software architecture. I'm continuously expanding my expertise in Generative AI, agentic systems, and scalable application development through hands-on projects.
-            </p>
+            
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
